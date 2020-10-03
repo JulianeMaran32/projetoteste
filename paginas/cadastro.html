@@ -1,0 +1,256 @@
+<!-- Indica ao navegador que este é um documento html -->
+<!DOCTYPE html>
+
+<html lang="pt-br"> <!-- Idioma -->
+
+	<head> <!-- Cabeçalho: informações específicas como página, título, estido, condição... -->
+		
+		<!-- condição de caracteres -->
+		<meta charset="utf-8"> 
+
+		<!-- Descrição do documento -->
+		<meta name="description" content="texto">
+
+		<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<!-- Estilo CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		
+		<!-- Arquivo JQuery 3.5.1 -->
+		<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+		
+		<!-- Função JS -->
+		<script type="text/javascript" src="../js/funcao.js"></script>
+		
+		<!-- JQuery -->
+		<script type="text/javascript" src="../js/jquery.js"></script>
+
+		<!-- PHP -->
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<!-- Título da página (aba do navegador) -->
+		<title> Blog Juliane - Cadastro </title>
+
+	</head> <!-- Fim do Cabeçalho -->
+
+	<body> <!-- Conteúdo da página -->
+
+		<header id="cabecalho"> <!-- Cabeçalho do corpo: logo tipo da empresa, título do site ou de um elemento -->
+				Nome do Site/Blog
+		</header> <!-- Fim do Cabeçalho -->
+		
+		<nav id="barra-nav"> <!-- Menu de navegação da página -->
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">              
+						HOME       
+					</a> 		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="tecnologia.html"> 
+						TECNOLOGIA 
+					</a> 		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="direito.html">    
+						DIREITO    
+					</a> 		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cadastro.html">   
+						CADASTRO   
+					</a> 		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sobre.html">      
+						SOBRE      
+					</a> 		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contato.html">    
+						CONTATOS   
+					</a> 		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">      
+						LOGIN      
+					</a>		
+				</li>
+			</ul>
+		</nav> <!-- // Fim do Menu -->
+
+		<aside id="barra-lateral">
+			<!-- conteúdo secundário nos templates, barras laterais: links, resumos, artigos, banners de publi, redes sociais -->
+
+			<h5> Sobre Juliane </h5>
+			<a href="docs/CV_Juliane_personalizado.pdf" target="_blank"> Baixe o Currículo </a>
+			<br><br>
+			
+			<h5> Conheça o meu trabalho </h5>
+			<a href="https://github.com/JulianeMaran32"> GitHub </a>
+			<br><br>
+			
+			<h5> Siga-me nas redes sociais </h5>			
+			<a href="https://www.linkedin.com/in/juliane-maran-168b73133"> LinkdIn </a>
+			<br>
+			<a href="https://www.facebook.com/julianevaliatimaran">	Facebook </a>
+			<br>
+			<a href=""> Instagram </a>
+			<br>
+			<a href="https://twitter.com/MaranJuliane"> Twitter </a>
+			<br><br>
+			
+			<h5> Últimas postagens </h5>
+			<a href="direito.html"> LGPD </a>
+			<br>
+			<a href="projetos.html"> Projeto Web </a>
+			<br>
+
+		</aside>
+
+		<section class="secao-page"> <!-- indica uma seção do corpo da página -->
+
+			<h3> Cadastro </h3>
+
+			<form action="/action_page.php"> <!-- formulário cadastro -->
+				
+				<!-- label = define um rótulo para vários elementos do formulário -->
+				<!-- atributo FOR do da tag label deve ser igual ao ID do input -->
+				<!-- input:
+				type="text" 	entrada de texto
+				type="radio" 	opção: selecionar 1 de várias
+				type="checkbox" caixa de seleção: 0 ou várias opções podem ser selecionadas
+				type="submit" 	botão de envio do formulário
+				type="button" 	botão clicável
+				-->
+
+				<!-- fname = first name -->				
+				<label for="fname">Nome:</label> <br>
+				<input type="text" name="fname" id="fname" placeholder="Digite seu nome...">
+
+				<br><br>
+
+				<!-- lname = last name -->
+				<label for="lname">Sobrenome:</label> <br> 
+				<input type="text" name="lname" id="lname" placeholder="Digite seu sobrenome...">
+				<br><br>
+
+				<!-- Idade -->
+				<label for="age">Idade</label> <br> 
+				<input type="number" name="idade" id="age" placeholder="00">
+				<br><br>
+				
+				<!-- E-mail -->
+				<label for="email">E-mail:</label> <br>
+				<input type="email" name="e-mail" id="email" placeholder="email@email.com">
+
+				<br><br>
+				
+				<!-- Genêros -->
+				<!-- radio = botão de opções -->
+				Genêro: <br>
+				<input type="radio" name="genero" id="male" value="male">
+				<label for="fname"> Masculino </label> <br>
+				<input type="radio" name="genero" id="female" value="famale">
+				<label for="fname"> Feminino </label> <br>
+				<input type="radio" name="genero" id="other" value="other">
+				<label for="fname"> Outro </label> <br>
+				
+				<br>
+
+				<!-- Curso -->
+				<!-- chekbox = Utilizando caixa de seleção -->
+				Selecione o seu curso: <br>
+				<input type="checkbox" name="curso1" id="curso1" value="Sistemas">
+				<label for="curso1"> Sistemas de Informação </label> <br>
+				<input type="checkbox" name="curso2" id="curso2" value="Direito">
+				<label for="curso2"> Direito </label> <br>
+				<input type="checkbox" name="curso3" id="curso3" value="Medicina">
+				<label for="curso3"> Medicina </label> <br>
+				<input type="checkbox" name="curso4" id="curso4" value="Engenharia">
+				<label for="curso4"> Engenharia Civil </label> <br>
+				<input type="checkbox" name="curso5" id="curso5" value="Letras">
+				<label for="curso5"> Letras </label>
+
+				<br><br>
+				<!-- Estado Civil -->
+				<!-- selecionar uma entre várias -->
+				Estado Civil: <br>
+				<select name="estado-civil">
+					<option value="se">Selecione</option>
+					<option value="solte"> Solteiro(a) </option>
+					<option value="casal"> Casado(a) </option>
+					<option value="divor"> Divorciado(a) </option>
+					<option value="viuvo"> Viúvo(a) </option>
+					<option value="uniao"> União Estável </option>
+				</select>
+				
+				<br><br>
+
+				<!-- Escolher o estado -->
+				Estado: <br>
+				<select name="estado">
+					<option value="se">Selecione</option>
+					<option value="ac">AC - Acre</option>
+					<option value="al">AL - Alagoas</option>
+					<option value="ap">AP - Amapá</option>
+					<option value="am">AM - Amazonas</option>
+					<option value="ba">BA - Bahia</option>
+					<option value="ce">CE - Ceará</option>
+					<option value="df">DF - Distrito Federal</option>
+					<option value="es">ES - Espírito Santo</option>
+					<option value="go">GO - Goiás</option>
+					<option value="ma">MA - Maranhão</option>
+					<option value="mt">MT - Mato Grosso</option>
+					<option value="ms">MS - Mato Grosso do Sul</option>
+					<option value="mg">MG - Minas Gerais</option>
+					<option value="pa">PA - Pará</option>
+					<option value="pb">PB - Paraíba</option>
+					<option value="pr">PR - Paraná</option>
+					<option value="pe">PE - Pernambuco</option>
+					<option value="pi">PI - Piauí</option>
+					<option value="rj">RJ - Rio de Janeiro</option>
+					<option value="rn">RN - Rio Grande do Norte</option>
+					<option value="rs">RS - Rio Grande do Sul</option>
+					<option value="ro">RO - Rondônia</option>
+					<option value="rr">RR - Roraima</option>
+					<option value="sc">SC - Santa Catarina</option>
+					<option value="sp">SP - São Paulo</option>
+					<option value="se">SE - Sergipe</option>
+					<option value="to">TO - Tocantins</option>
+				</select><br><br>
+
+				Observações: <br>
+				<!-- Caixa de texto 
+					rows limita o número visível de linhas e cols limita a largura visível da área de texto 
+					Neste caso poderia ser rows="10" e cols="30"
+					Mas irei usar no CSS
+				-->
+				<textarea name="mensagem" class="observacao">
+					Digite aqui...
+				</textarea>
+
+				<br><br>
+				<input type="submit" name="enviar" value="Enviar">
+
+			</form>
+
+		</section> <!-- // Fim da seção-->
+		
+		<footer> <!-- Rodapé -->        	
+        	&copy; Blog Juliane - 2020 <br>
+        	<strong>Todos os direitos reservados.</strong> <br>
+        	Por: Juliane Maran
+    	</footer> <!-- // Fim Rodapé -->
+
+	</body> <!-- Fim do Corpo -->
+</html>	

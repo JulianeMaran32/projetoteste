@@ -1,0 +1,131 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'sidebar main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+  color: #990033;
+}
+
+header, section, nav, aside, footer {
+  background-color: #ffe6e6;  
+}
+
+header {
+	text-align: center;
+	font-size: 30px;
+}
+
+article {
+  border: 5px solid #ff9999;
+  margin: 5px;
+  padding: 20px;
+  background-color: #ffe6e6;
+  text-align: justify;
+}
+
+header { 
+	grid-area: header;
+	padding: 15px;
+}
+
+nav { 
+	grid-area: menu; 
+	text-align: left;
+	padding: 10px;
+}
+
+/* 
+a 			link
+a:link		link normal não visitado
+a:visited	link que o usuário visitou
+a:hover		link quando o usuário passa o mouse
+a:active	link no momento em que é clicado
+text-decoration: remove o sublinhado do link
+*/
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #990033;
+}
+
+section { 
+	grid-area: main;
+}
+
+h3, h2 {
+	text-align: center;
+	padding: 20px;
+}
+
+p {
+	text-align: justify;
+	font-size: 16px;
+}
+
+aside { 
+	grid-area: sidebar; 
+	padding: 10px;
+}
+
+form {
+	padding: 20px;
+}
+
+aside a {
+	font-size: 12px;
+}
+
+footer { 
+	grid-area: footer;
+	text-align: center; 
+	font-size: 12px;
+	padding: 5px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#home {
+
+}
+
+/* Cadastro: textarea - caixa de texto da observação */
+.observacao {
+	width: 300px;
+	height: 150px;
+}
+
+.artigo-page {
+	font-size: 15px;
+	color: black;
+}
+
+/* TAMANHO DOS TEXTOS
+	px -> tamanho fixo
+	tamanho padrão dos parágrafos - 16px 
+	% -> tamanho relativo
+	100% é o tamanho padrão do browser
+	16px = 100%
+	em -> tamanho relativo ao container pai
+
+	negrito = font-weight = normal, bold, 100 a 900
+	itálico = font-style  = italic
+	text-decoration = underline / overline / line-through
+
+*/
