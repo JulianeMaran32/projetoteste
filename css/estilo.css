@@ -5,42 +5,28 @@
 
 body {
   font-family: sans-serif;
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu menu menu menu menu menu'
-    'sidebar main main main main main'
-    'footer footer footer footer footer footer';
-  grid-gap: 10px;
-  padding: 10px;
+  padding: 5px;
   color: #990033;
 }
 
-header, section, nav, aside, footer {
+header, section, nav, footer {
   background-color: #ffe6e6;  
 }
 
 header {
 	text-align: center;
 	font-size: 30px;
-}
-
-article {
-  border: 5px solid #ff9999;
-  margin: 5px;
-  padding: 20px;
-  background-color: #ffe6e6;
-  text-align: justify;
-}
-
-header { 
-	grid-area: header;
 	padding: 15px;
+	border: 3px solid #ff9999;
 }
 
-nav { 
-	grid-area: menu; 
-	text-align: left;
+.container {
+	font-size: 1em;
+}
+
+.dividir{
+	border: 1px solid #ff9999;
+	border-spacing: 10px;
 	padding: 10px;
 }
 
@@ -53,16 +39,20 @@ a:active	link no momento em que é clicado
 text-decoration: remove o sublinhado do link
 */
 
-a {
-	text-decoration: none;
+a:link, a:visited, a:active {
+	 color: #990033;
 }
 
-a:link, a:visited {
-	color: #990033;
+a:hover{
+	color: #ff9999;
 }
 
 section { 
-	grid-area: main;
+	text-align: justify;
+	font-size: 15px;
+	border: 3px solid #ff9999;
+	margin: 5px;
+  	padding: 15px;
 }
 
 h3, h2 {
@@ -75,11 +65,6 @@ p {
 	font-size: 16px;
 }
 
-aside { 
-	grid-area: sidebar; 
-	padding: 10px;
-}
-
 form {
 	padding: 20px;
 }
@@ -89,31 +74,20 @@ aside a {
 }
 
 footer { 
-	grid-area: footer;
-	text-align: center; 
 	font-size: 12px;
 	padding: 5px;
+	border: 3px solid #ff9999;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+nav {
+	font-size: 14px;
 }
 
-#home {
-
-}
 
 /* Cadastro: textarea - caixa de texto da observação */
 .observacao {
 	width: 300px;
 	height: 150px;
-}
-
-.artigo-page {
-	font-size: 15px;
-	color: black;
 }
 
 /* TAMANHO DOS TEXTOS
@@ -129,3 +103,11 @@ ul {
 	text-decoration = underline / overline / line-through
 
 */
+
+/* Contato HTML */
+
+.contato {
+	padding: 10px;
+	margin: 10px;
+	font-size: 1.25em;
+}

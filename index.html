@@ -19,6 +19,9 @@
 		<script src="js/bootstrap.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.css">
 
+		<!-- Font Awesome - icones -->
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 		<!-- Estilo CSS -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		
@@ -44,161 +47,145 @@
 
 	<body> <!-- Conteúdo da página -->
 
-		<header id="cabecalho"> <!-- Cabeçalho do corpo: logo tipo da empresa, título do site ou de um elemento -->
-				Juliane Maran 
-		</header> <!-- Fim do Cabeçalho -->
-			
-		<nav id="barra-nav"> <!-- Menu de navegação da página -->
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">              
-						HOME       
-					</a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paginas/tecnologia.html"> 
-						TECNOLOGIA 
-					</a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paginas/direito.html">    
-						DIREITO    
-					</a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paginas/cadastro.html">   
-						CADASTRO   
-					</a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paginas/sobre.html">      
-						SOBRE      
-					</a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paginas/contato.html">    
-						CONTATOS   
-					</a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="paginas/login.html">      
-						LOGIN      
-					</a>		
-				</li>
-			</ul>
-		</nav> <!-- // Fim do Menu -->
+		<header id="cabecalho"> <!-- Cabeçalho do corpo: logo tipo da empresa, título do site ou de um elemento -->				
+			<h2 class="display-5">
+				BLOG JULIANE
+			</h2> 
+			<nav class="navbar navbar-expand-md"> <!-- barra de navegação -->
+				<div class="container">					
+					<div class="collapse navbar-collapse">
+						
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">
+									Página Incial
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="paginas/tecnologia.html" class="nav-link">
+									Tecnologia
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="paginas/direito.html" class="nav-link">
+									Direito
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="paginas/sobre.html" class="nav-link">
+									Sobre
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="paginas/contato.html" class="nav-link">
+									Contatos
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="paginas/cadastro.html" class="nav-link">
+									Inscrever-se
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="paginas/login.html" class="nav-link">
+									Entrar
+								</a>
+							</li>
+						</ul>
 
-		<aside id="barra-lateral">
-			<!-- conteúdo secundário nos templates, barras laterais: links, resumos, artigos, banners de publi, redes sociais -->
-
-			<h5> Sobre Juliane </h5>
-			<a href="docs/CV_Juliane_personalizado.pdf" target="_blank"> Baixe o Currículo </a>
-			<br><br>
-
-			<h5> Conheça o meu trabalho </h5>
-			<a href="https://github.com/JulianeMaran32"> GitHub </a>
-			<br><br>
-			
-			<h5> Siga-me nas redes sociais </h5>			
-			<a href="https://www.linkedin.com/in/juliane-maran-168b73133"> LinkdIn </a>
-			<br>
-			<a href="https://www.facebook.com/julianevaliatimaran">	Facebook </a>
-			<br>
-			<a href=""> Instagram </a>
-			<br>
-			<a href="https://twitter.com/MaranJuliane"> Twitter </a>
-			<br><br>
-			
-			<h5> Últimas postagens </h5>
-			<a href="direito.html"> LGPD </a>
-			<br>
-			<a href="projetos.html"> Projeto Web </a>
-			<br>
-
-		</aside>
-
-		<section id="home"> <!-- indica uma seção do corpo da página -->
-			
-			<h3> Apresentação </h3>
-
-			<div class="container"> <!-- div class container 1 -->
-				<div class="row"> <!-- div class row 1 -->
-					
-					<div class="col-md-6 d-flex">
-						<article class="artigo-page"> 
-							<!-- artigos da página, postagem, notícias, informes - dentro da tag section -->
-
-							<p>
-								<strong>Barra de Navegação superior:</strong> Você tem acesso aos conteúdos de minha autoria 
-								e de outros autores, devidamente identificados.	<br>
-								<strong>Barra Lateral:</strong> são os meus links pessoais, para acessar as redes sociais e 
-								e meus projetos (GitHub e GitLab).
-							</p>
-
-							<p>
-								Utilizando o BOOTSTRAP:<br>
-								MEU NAVEGAÇÃO: tag nav <br>
-								Criando um menu horizontal simples <br>
-								Dentro da tag ul colocar a classe nav. Em seuginda abrir tag li e nesta tag colocar a classe nav-item.
-								Seguida da tag a e criar uma class nav-link. <br>
-								Dentro da tag nav foi criado o menu horizontal simples justificado. <br>
-								A nav-tab serve para criar abas nos links do menu.
-							</p>					
-
-							
-
-							
-
-						</article>	
-					</div>		
-
-					<div class="col-md-6 d-flex">
-						<article class="artigo-page"> 
-							<!-- artigos da página, postagem, notícias, informes - dentro da tag section -->
-
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-						</article>	
-					</div>			
-					
-
-					
-
-				</div> <!-- Fim div class row 1 -->
-			</div> <!-- Fim div class container 1 -->
-
-			
-
-		</section> <!-- // Fim da seção-->
+					</div>
+				</div>
+			</nav> <!-- Fim barra de navegação -->				
+		</header> <!-- Fim do Cabeçalho -->				
 		
-		<footer> <!-- Rodapé -->        	
-        	&copy; Blog Juliane - 2020 <br>
-        	<strong>Todos os direitos reservados.</strong> <br>
-        	Por: Juliane Maran
-    	</footer> <!-- // Fim Rodapé -->
 
+		<section>
+
+			<h5>Inscreva-se no site para ter acesso a todos os conteúdos.</h5>
+
+		    <!-- Login -->
+		    <div class="form-row"> 
+		    	<div class="form-group col-md-2">  
+		        	<input class="form-control mr-2" type="text" placeholder="Usuário">
+		      	</div>
+		      	<div class="form-group col-md-2">  
+		        	<input class="form-control mr-2" type="password" placeholder="Senha">
+		      	</div>
+		      	<div class="form-group col-md-2">
+		        	<div class="input-group-append">
+		          		<button class="btn" type="button">Entrar</button>
+		        	</div>
+		      	</div>
+		      	<div class="form-group col-md-2">  
+		        	<input class="form-control mr-2" type="text" placeholder="Pesquisar">
+		      	</div>
+		      	<div class="form-group col-md-2">
+		        	<div class="input-group-append">
+		          		<button class="btn" type="button">Pesquisar</button>
+		        	</div>
+		      	</div>
+		    </div> <!-- // Fim Formulario Login -->
+		    
+	    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	<br>
+	    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	<br>
+	    </section>	
+
+		<footer class="mt-4 mb-4"> <!-- Rodapé -->       
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4">
+						&copy; Blog Juliane - 2020 <br>
+			        	<strong>Todos os direitos reservados.</strong> <br>
+			        	Por: Juliane Maran
+					</div>
+
+					<div class="col-md-8 d-flex justify-content-end">
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-facebook"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-twitter"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-instagram"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-linkedin"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-github"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-youtube"></i>							
+						</a>
+					</div>					
+				</div>
+			</div> 	    	
+    	</footer> <!-- // Fim Rodapé -->
 	</body> <!-- Fim do Corpo -->
 </html>
