@@ -16,8 +16,11 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 		<!-- Bootstrap -->
-		<script src="js/bootstrap.js"></script>
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.css">
+
+		<!-- Font Awesome -->
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 		<!-- Estilo CSS -->
 		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
@@ -38,91 +41,136 @@
 		<![endif]-->
 
 		<!-- Título da página (aba do navegador) -->
-		<title> Blog Juliane - Contato </title>
+		<title> Contato </title>
 
 	</head> <!-- Fim do Cabeçalho -->
 
 	<body> <!-- Conteúdo da página -->
 
-		<header id="cabecalho"> <!-- Cabeçalho do corpo: logo tipo da empresa, título do site ou de um elemento -->
-				Juliane Maran 
+		<header id="cabecalho"> <!-- Cabeçalho do corpo: logo tipo da empresa, título do site ou de um elemento -->				<h2 class="display-5">
+				BLOG JULIANE
+			</h2> 
+			<nav class="navbar navbar-expand-md"> <!-- barra de navegação -->
+				<div class="container">					
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="../index.html" class="nav-link">
+									Página Incial
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="tecnologia.html" class="nav-link">
+									Tecnologia
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="direito.html" class="nav-link">
+									Direito
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="sobre.html" class="nav-link">
+									Sobre
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="contato.html" class="nav-link">
+									Contatos
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="cadastro.html" class="nav-link">
+									Inscrever-se
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="login.html" class="nav-link">
+									Entrar
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav> <!-- Fim barra de navegação -->				
 		</header> <!-- Fim do Cabeçalho -->
-		
-		<nav id="barra-nav"> <!-- Menu de navegação da página -->
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">              HOME       </a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="tecnologia.html"> TECNOLOGIA </a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="direito.html">    DIREITO    </a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="cadastro.html">   CADASTRO   </a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="sobre.html">      SOBRE      </a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contato.html">    CONTATOS   </a> 		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="login.html">      LOGIN      </a>		
-				</li>
-			</ul>
-		</nav> <!-- // Fim do Menu -->
-
-		<aside id="barra-lateral">
-			<!-- conteúdo secundário nos templates, barras laterais: links, resumos, artigos, banners de publi, redes sociais -->
-
-			<h5> Sobre Juliane </h5>
-			<a href="docs/CV_Juliane_personalizado.pdf" target="_blank"> Baixe o Currículo </a>
-			<br><br>
-			
-			<h5> Conheça o meu trabalho </h5>
-			<a href="https://github.com/JulianeMaran32"> GitHub </a>
-			<br><br>
-			
-			<h5> Siga-me nas redes sociais </h5>			
-			<a href="https://www.linkedin.com/in/juliane-maran-168b73133"> LinkdIn </a>
-			<br>
-			<a href="https://www.facebook.com/julianevaliatimaran">	Facebook </a>
-			<br>
-			<a href=""> Instagram </a>
-			<br>
-			<a href="https://twitter.com/MaranJuliane"> Twitter </a>
-			<br><br>
-			
-			<h5> Últimas postagens </h5>
-			<a href="direito.html"> LGPD </a>
-			<br>
-			<a href="projetos.html"> Projeto Web </a>
-			<br>
-
-		</aside>
 
 		<section class="secao-page"> <!-- indica uma seção do corpo da página -->
 
-			<h3> CONTATO </h3>
+			<h3 class="display-6"> CONTATO </h3>
 			
-			<p>
-				<strong> Nome completo </strong> 
+			<h5 class="contato">
+				<strong>
+					Juliane Valiati Maran
+				</strong> 
+			</h5>
+
+			<address class="contato">
+				<a href="julianemaran@gmail.com">
+					<i class="fas fa-at"> julianemaran@gmail.com </i>
+				</a>
+				<br>
+				<i class="fab fa-whatsapp"> (41) 9 9211-9488 </i>
+				<br>
+				<i class="fas fa-map-marker-alt">
+					Curitiba | Paraná
+				</i>
 				<br><br>
-				<strong> E-mail: </strong> julianemaran@gmail.com 
-				<br><br>
-				<strong> Telefone: </strong> (41) 9 9211-9488
-			</p>
+
+				<h6>REDES SOCIAIS</h6>
+				<a href="https://github.com/JulianeMaran32">
+					<i class="fab fa-github-square"></i> 							
+				</a> 
+				<a href="">
+					<i class="fab fa-facebook"></i>
+				</a>		
+				<a href="https://www.facebook.com/julianevaliatimaran">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/juliane-maran-168b73133">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="https://twitter.com/MaranJuliane"> 
+					<i class="fab fa-twitter"></i> 
+				</a>
+			</address>
 
 		</section> <!-- // Fim da seção-->
 		
-		<footer> <!-- Rodapé -->        	
+		<footer class="mt-4 mb-4"> <!-- Rodapé -->       
+		<div class="container">
+				<div class="row">
 
-        	&copy; Blog Juliane - 2020 <br>
-        	<strong>Todos os direitos reservados.</strong> <br>
-        	Por: Juliane Maran
+					<div class="col-md-4">
+						&copy; Blog Juliane - 2020 <br>
+			        	<strong>Todos os direitos reservados.</strong> <br>
+			        	Por: Juliane Maran
+					</div>
 
+					<div class="col-md-8 d-flex justify-content-end">
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-facebook"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-twitter"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-instagram"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-linkedin"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-github"></i>							
+						</a>
+						<a href="" class="btn ml-2 mb-2">
+							<i class="fab fa-youtube"></i>							
+						</a>
+					</div>
+					
+				</div>
+			</div> 	
+        	
     	</footer> <!-- // Fim Rodapé -->
 
 	</body> <!-- Fim do Corpo -->
