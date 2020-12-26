@@ -7,9 +7,9 @@
 * Estrutua MVC para PHP / Structures MVC for PHP
 * Hierarquia de Diretórios / Directory hierarchy
 
-@package
-@author:  Juliane
-@version: 1.0 2020-12-16
-Directory:
-Archive:
+| @package | 
+@author:  Juliane |
+@version: 1.0 2020-12-16 |
+Directory: |
+Archive: |
 
