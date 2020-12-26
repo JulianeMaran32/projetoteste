@@ -1,4 +1,4 @@
-# PROJETO TESTE / TEST PROJECT
+# TEST PROJECT
 
 * PT_BR - Trata-se de um repositório onde testo meus conhecimentos adquiridos durante a faculdade e cursos extracurriculares.
 * EN - It is a repository where I test my knowledge acquired during college and extracurricular courses.
